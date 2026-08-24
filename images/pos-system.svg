@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#141416"/>
+      <stop offset="100%" stop-color="#0a0a0b"/>
+    </linearGradient>
+    <linearGradient id="gold3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f2d574"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </linearGradient>
+    <radialGradient id="glow3" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid3" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#bg3)"/>
+  <rect width="600" height="400" fill="url(#grid3)"/>
+  <rect width="600" height="400" fill="url(#glow3)"/>
+
+  <!-- terminal screen -->
+  <rect x="210" y="90" width="180" height="120" rx="10" fill="none" stroke="url(#gold3)" stroke-width="4"/>
+  <line x1="228" y1="118" x2="372" y2="118" stroke="#5b5b60" stroke-width="4" stroke-linecap="round"/>
+  <line x1="228" y1="138" x2="340" y2="138" stroke="#3a3a3e" stroke-width="4" stroke-linecap="round"/>
+  <line x1="228" y1="158" x2="360" y2="158" stroke="#3a3a3e" stroke-width="4" stroke-linecap="round"/>
+  <!-- stand -->
+  <path d="M280 210 L320 210 L332 232 L268 232 Z" fill="none" stroke="url(#gold3)" stroke-width="3.5" stroke-linejoin="round"/>
+
+  <!-- receipt -->
+  <g transform="translate(150,150)">
+    <path d="M0 0 H70 V90 L60 82 L50 90 L40 82 L30 90 L20 82 L10 90 L0 82 Z"
+          fill="#111113" stroke="#5b5b60" stroke-width="2.5" stroke-linejoin="round"/>
+    <line x1="12" y1="18" x2="58" y2="18" stroke="#8f8f94" stroke-width="2.5"/>
+    <line x1="12" y1="32" x2="58" y2="32" stroke="#3a3a3e" stroke-width="2.5"/>
+    <line x1="12" y1="46" x2="46" y2="46" stroke="#3a3a3e" stroke-width="2.5"/>
+  </g>
+
+  <!-- card -->
+  <g transform="translate(378,168) rotate(-8)">
+    <rect x="0" y="0" width="76" height="48" rx="6" fill="#111113" stroke="url(#gold3)" stroke-width="3"/>
+    <rect x="8" y="12" width="20" height="12" rx="2" fill="url(#gold3)"/>
+    <line x1="8" y1="36" x2="60" y2="36" stroke="#5b5b60" stroke-width="3"/>
+  </g>
+
+  <line x1="130" y1="300" x2="470" y2="300" stroke="#26262a" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <text x="300" y="340" text-anchor="middle" font-family="Poppins, sans-serif" font-size="15" letter-spacing="4"
+        fill="#d4af37" opacity="0.85">SALES · BILLING · INVENTORY</text>
+</svg>
